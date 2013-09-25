@@ -16,8 +16,18 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Alex\CommonBundle\AlexCommonBundle(),
+            
+            // FOS bundle
             new FOS\UserBundle\FOSUserBundle(),
+
+            // Integration TwitterBootstrap
+            new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
+
+            // Fixtutres
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            
+            // Custom bundles    
+            new Alex\CommonBundle\AlexCommonBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
