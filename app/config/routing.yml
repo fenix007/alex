@@ -1,0 +1,5 @@
+alex_common:
+    resource: "@AlexCommonBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
